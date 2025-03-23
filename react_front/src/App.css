@@ -1,0 +1,45 @@
+/* General Layout */
+.app-container {
+  display: flex;
+  height: 100vh;
+  background-color: #000;
+  color: #F5F5F5;
+}
+
+/* Chat Container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 75% !important;
+  padding: 20px;
+  overflow: hidden;
+}
+
+
+.filelist-container {
+  width: 25%; /* FileList 占据 20% */
+  height: 100%; /* 高度充满父容器 */
+  overflow: visible; /* 确保内容可见 */
+  max-height: none;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  
+}
+
+.filelist-container::-webkit-scrollbar {
+  width: 0px;
+}
+
+.filelist-container::-webkit-scrollbar-thumb {
+  background-color: #2A2A2A; /* 滚动条颜色 */
+  border-radius: 4px;
+}
+
+.filelist-container::-webkit-scrollbar-thumb:hover {
+  background-color: #4A4A4A; /* 悬停时滚动条颜色 */
+}
+
+.filelist-container::-webkit-scrollbar-track {
+  background-color: #3A3A3A; /* 滚动条轨道颜色 */
+}
